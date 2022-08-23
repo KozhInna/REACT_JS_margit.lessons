@@ -1,9 +1,10 @@
 const daySalary = () => {
     const payPerHour = Number(prompt('How much do you get per hour?'));
     const hoursPerDay = Number(prompt('How many hours have you worked today?'));
+
     let salary;
     const basicSalary = 7 * payPerHour;
-    const halfExtra = payPerHour * 1,5;
+    const halfExtra = payPerHour * 1.5;
     const doubleExta = payPerHour * 2;
     
     if (hoursPerDay <= 7) {
@@ -17,4 +18,5 @@ const daySalary = () => {
     return console.log(salary);
     }
     }
+
     daySalary();
