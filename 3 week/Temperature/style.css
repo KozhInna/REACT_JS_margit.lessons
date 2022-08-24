@@ -1,0 +1,9 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label {
+    width: 100px;
+}
+input {
+    font-family: inherent;
+}

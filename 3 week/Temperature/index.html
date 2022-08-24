@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Converter</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <!-- <div>
+        <label>Fahrenheit</label>
+        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+        oninput="temperatureConverter(this.value)"
+        onchange="temperatureConverter(this.value)">
+    </div>
+    <div>
+        <label>Celsius: <span id="outputCelsius"></span></label>
+        <input type="number" id="outputCelsius" oninput="tempConverter(this.value)">
+    </div> -->
+      
+
+
+
+    <div>
+        <label for="inputCelcius">Celcius</label>
+        <input 
+        type="number" 
+        id="outCelcius" 
+        placeholder="Celcius"
+        oninput="tempConverter(this.id, this.value)">
+    </div>
+    <div>
+        <label for="inputfahrenheit">Fahrenheit</label>
+        <input 
+        type="number" 
+        id="infahrenheit"
+        placeholder="Celcius"
+        oninput="tempConverter(this.id, this.value)">
+    </div>
+    
+    <div>
+        <label for="inputkelvin">Kelvin</label>
+        <input 
+        type="number" 
+        id="inputkelvin"
+        placeholder="Celcius"
+        oninput="tempConverter(this.id, this.value)">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -77,4 +77,67 @@ while (decision == 'y');
 
 // Make a program that asks first how many numbers user wants to give to the program. After that program asks those numbers. In the end program prints out the smallest number that user gave.
 
-prompt('How ')
+let input = 0;
+let min = 0;
+let counter = prompt('How many numbers are you going to enter?');
+
+for (let i = 0; i < counter; i++) {
+    input = Number(prompt(Tell me your numbers));
+    if (min < 1) {
+        min = input;
+    }
+}
+
+// 9.Make a program that asks ten numbers and in the end prints out two biggest numbers.
+
+let max = 0;
+let max1 = 0;
+let max2 = 0;
+let input = 0;
+
+for (let i = 0; i < 5; i++) {
+input = Number(prompt('Give me 10 numbers'));
+if (input > max1) {
+max1 = input;
+// console.log('Num1', max1);
+input = Number(prompt('Give me 10 numbers'));
+if (input > max2) {
+max2 = input;
+// console.log('Num2', max2);
+}
+if (max2 > max1) {
+max = max1;
+max1 = max2;
+max2 = max;
+// console.log('mun changed1', max1);
+// console.log('mun changed2', max2);
+}
+}
+}
+console.log(`These are two biggest numbers ${max1} and ${max2}`);
+
+// 10. Make a program that asks ten numbers. Program calculates and prints out sum and average, also prints out the smallest and biggest number.
+
+let max = 0;
+let average = 0;
+let input = 0;
+let sum = 0;
+
+for (let i = 0; i < 10; i++) {
+input = Number(prompt('Give me 10 numbers'));
+min = input;
+if (input > max) {
+    max = input;
+} 
+    sum += input;
+}
+    average = sum/10;
+
+if (input < min) {
+    min = input;
+}
+
+
+console.log('Sum:',sum);
+console.log('Average', average);
+console.log('This is the biggest number',max, 'and the smallest number', min);
